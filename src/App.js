@@ -48,6 +48,7 @@ function App() {
       <Route path='/' element={<Navbar/>}>
 
       <Route index element={<Home/>}/>
+      <Route path='masroofy' element={<Home/>}/>
       <Route path='chart' element={<Chart/>}/>
       <Route path='about' element={<About/>}/>
       <Route path='*' element={<NotFound/>}/>
