@@ -284,5 +284,83 @@ button:hover{
     width: auto;
 }
 
+/* ----------------- */
+/* Base navbar styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Hide the menu by default */
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+/* Hamburger button (visible on small screens) */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.open {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu ul {
+        display: block;
+        padding: 0;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    .menu a {
+        padding: 15px;
+        border-top: 1px solid #444;
+    }
+}
+
 
 

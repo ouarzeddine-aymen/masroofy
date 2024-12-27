@@ -45,12 +45,11 @@ function App() {
 
       <Routes>
 
-      <Route path='/masroofy' element={<Navbar/>}>
+      <Route path='/' element={<Navbar/>}>
 
       <Route index element={<Home/>}/>
       <Route path='chart' element={<Chart/>}/>
       <Route path='about' element={<About/>}/>
-      <Route path='*' element={<NotFound/>}/>
       
       </Route>
 
